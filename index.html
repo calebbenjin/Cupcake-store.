@@ -16,9 +16,9 @@
 <body>
     <!--Header-->
     <header>
-        <nav class="nav-bar navbar-expand-lg px-4">
+        <nav class="navbar navbar-expand-lg px-4">
             <!--Logo brand-->
-            <a href="#" class="navbar-brand"><img src="img/logo.svg" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
                 <span class="toggler-icon"><i class="fas fa-bars"></i></span>
             </button>
@@ -27,14 +27,11 @@
                     <li class="nav-item active">
                         <a href="#" class="nav-link">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-4">
                         <a href="#" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Store</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
                     </li>
                 </ul>
                 <div class="nav-info-items d-none d-lg-flex">
@@ -59,7 +56,29 @@
         <!--end of nav-->
 
         <!--banner-->
-
+        <div class="container-fluid">
+            <div class="row max-height justify-content-center align-items-center">
+                <div class="col-10 mx-auto banner text-center">
+                    <h1 class="text-capitalize">Welcome to <strong class="banner-title">grandma's</strong></h1>
+                    <a href="" class="btn banner-link text-uppercase my-2">Explore</a>
+                </div>
+                <div class="cart" id="cart">
+                    <!--cart item-->
+                    <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+                        <img src="img-cart/cake-2.jpeg" class="img-fluid rounded-circle" id="item-img" alt="">
+                        <div class="item-text">
+                            <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+                            <span>$</span>
+                            <span id="cart-item-remove" class="cart-item-price mb-0">10.99</span>
+                        </div>
+                        <a href="#" id="cart-item-remove" class="cart-item-remove">
+                            <i class="fas fa-trash"></i>
+                        </a>
+                    </div>
+                    <!--end of  cart item -->
+                </div>
+            </div>
+        </div>
     </header>
     <!--Header end-->
 </body>
